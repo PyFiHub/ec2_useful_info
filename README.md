@@ -1,4 +1,5 @@
 ## Linux Commands
+
 - **Update System Packages** `sudo apt update && sudo apt upgrade -y` 
 - **Install Essential Packages** `sudo apt install -y vim htop wget curl `
 ---
@@ -17,6 +18,7 @@
 - **Disable Nginx at Server Start** `sudo systemctl disable nginx` 
 - **Enable Nginx at Server Start** `sudo systemctl enable nginx` 
 - **Change Ownership Ubuntu** `sudo chown -R ubuntu /etc/nginx`
+- **Check Config File** `sudo nginx -t`
 ---
 ### CERTBOT
 
@@ -26,6 +28,15 @@
 - **Check Certificate** `sudo certbot certificates`
 - **Check Certificate Auto Renewal** `sudo certbot renew --dry-run`
 - **Change Ownership Ubuntu** `sudo chown -R ubuntu /etc/letsencrypt/live`
+---
+### TMUX
+
+- **Install TMUX** `sudo apt-get install tmux`
+- **Create Streaming Session** `tmux new -s Session_Name`
+- **Reattach Streaming Session** `tmux attach -t Session_Name`
+- **Kill Streaming Session** `tmux kill -t Session_Name`
+- **Exit Bash** `Ctrl+B and then D`
+- **Running Sessions** `tmux ls`
 ---
 ### Streamlit
 
